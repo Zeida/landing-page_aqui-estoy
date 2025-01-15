@@ -1,5 +1,7 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 
-// https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+  site: 'https://zeida.github.io/landing-page_aqui-estoy', 
+  base: '/landing-page_aqui-estoy/',
+  output: 'static'
+});
