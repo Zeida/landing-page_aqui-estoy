@@ -1,7 +1,8 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://aqui-estoy.netlify.app', 
-  base: '/',
+  site: 'https://zeida.github.io/landing-page_aqui-estoy', 
+  base: '/landing-page_aqui-estoy/',
   output: 'static'
 });
+
