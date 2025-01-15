@@ -1,29 +1,34 @@
 ---
-import MainHero from "../components/MainHero.astro"
-import TestimonialsHero from "../components/TestimonialsHero.astro"
-import InstructionsHero from "../components/InstructionsHero.astro"
-import FooterHero from "../components/FooterHero.astro"
-import "../styles/global.css";  
-
+import MainHero from "../components/MainHero.astro";
+import TestimonialsHero from "../components/TestimonialsHero.astro";
+import InstructionsHero from "../components/InstructionsHero.astro";
+import FooterHero from "../components/FooterHero.astro";
+import "../styles/global.css";
 ---
 
 <html>
-	<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width" />
-	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-	<meta name="generator" content={Astro.generator} />
-	<title>¡Aquí estoy!</title>
-	<style>
-		body{margin:0;}
-	</style>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>¡Aquí estoy!</title>
+    <style>
+      body {
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <MainHero />
+    <InstructionsHero />
+    <TestimonialsHero />
+    <FooterHero />
+    <script >
+      import AOS from "aos";
+      import "aos/dist/aos.css";
 
-	<MainHero/>
-	<InstructionsHero/>
-	<TestimonialsHero/>
-	<FooterHero/>
-
-
-</body></html>
+      AOS.init();
+    </script>
+  </body>
+</html>
