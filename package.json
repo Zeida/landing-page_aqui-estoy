@@ -2,13 +2,20 @@
   "name": "landing-page-aqui-estoy",
   "type": "module",
   "version": "0.0.1",
-  "scripts": {
+"scripts": {
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.7"
+    "@fontsource/luckiest-guy": "^5.1.0",
+    "@fontsource/montserrat": "^5.1.0",
+    "astro": "^5.1.1",
+    "astro-icon": "^1.1.5",
+    "rough-notation": "^0.5.1"
+  },
+  "devDependencies": {
+    "@iconify-json/material-symbols": "^1.2.12"
   }
 }

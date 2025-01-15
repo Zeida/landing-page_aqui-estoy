@@ -1,16 +1,27 @@
 ---
+import MainHero from "../components/MainHero.astro"
+import TestimonialsHero from "../components/TestimonialsHero.astro"
+import InstructionsHero from "../components/InstructionsHero.astro"
+import FooterHero from "../components/FooterHero.astro"
+import "../styles/global.css";  
 
 ---
+<style>
+	body{margin:0;}
+</style>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+	<meta name="generator" content={Astro.generator} />
+	<title>Astro Basics</title>
+</head>
+<body>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+	<MainHero/>
+	<InstructionsHero/>
+	<TestimonialsHero/>
+	<FooterHero/>
+
+
+</body>
