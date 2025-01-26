@@ -1,13 +1,12 @@
 ---
 import Header from "../components/MainHeader.astro";
-import girlCatIcon from "../icons/girl_with_cat.svg?inline";
-
+import girlFliyingDog from "../icons/girl_flying_dog.svg?inline";
 ---
 
 <Header />
 
 <div class="landing-page-1">
-  <img src={girlCatIcon} alt="" />
+  <img src={girlFliyingDog} alt="" />
   <div class="container-rigth-side">
     <h1>TRAEMOS A TU MASCOTA DE VUELTA</h1>
     <div id="container-light-blue">
@@ -34,7 +33,10 @@ import girlCatIcon from "../icons/girl_with_cat.svg?inline";
     & img {
       max-width: var(--size-imag);
       max-height: var(--size-imag);
-      margin-top: 20px;
+      padding: 10px 20px 400px 20px;
+      margin-top: 60px;
+      margin-left:30px;
+      margin-bottom: 200px;
       z-index: 1;
     }
     & .container-rigth-side {
