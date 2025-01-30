@@ -2,7 +2,6 @@
 
 import InstructionCard from "../components/elements/InstructionCard.astro";
 import instructions from "../data/instructions.json";
-import catPlaying from "../icons/catPlaying.svg?inline";
 ---
 
 <div class="landing-page-2">
@@ -29,9 +28,9 @@ import catPlaying from "../icons/catPlaying.svg?inline";
   </div>
 
   <div class="call-to-action">
-    <div class="call-to-action-text">
-      <h2>¡Únete a la búsqueda!</h2>
-    </div>
+    <a class="call-to-action-link"  href="https://web-aqui-estoy.netlify.app/register">
+      <button class="call-to-action-text" type="button"><h2>¡Únete a la búsqueda!</h2></button>
+    </a>
   </div>
 </div>
 
@@ -78,6 +77,10 @@ import catPlaying from "../icons/catPlaying.svg?inline";
     align-items: center;
     width: auto;
   }
+  .call-to-action-link{
+    text-decoration: none;
+    
+  }
 
   .call-to-action-text {
     display: flex;
@@ -103,3 +106,4 @@ import catPlaying from "../icons/catPlaying.svg?inline";
     }
   }
 </style>
+
