@@ -3,9 +3,8 @@
 
 <div class="nav-container">
   <nav class="header-left">
-    <p>¡AQUÍ ESTOY!</p>
     <div class="nav-links">
-      <a href="/">Home</a>
+      <a class="home" href="/">¡AQUÍ ESTOY!</a>
       <a href="https://web-aqui-estoy.netlify.app/lost-animals">En búsqueda</a>
       <a href="https://web-aqui-estoy.netlify.app/found-animals">Encontrados</a>
       <a href="https://web-aqui-estoy.netlify.app/about">Sobre nosotras ...</a>
@@ -13,7 +12,6 @@
   </nav>
 
   <nav class="header-right">
-    <a href="form-lost-animal">Crear publicación</a>
     <a class="button-login" href="https://web-aqui-estoy.netlify.app/login">Acceder</a>
     <a class="button-register" href="https://web-aqui-estoy.netlify.app/register">Registrarse</a>
   
@@ -61,21 +59,12 @@
   gap: 20px; /* Espaciado entre los elementos */
 }
 
-.header-left p {
+.home {
   color: var(--color-celeste);
   font-family: "Luckiest Guy", system-ui;
   font-size: 20px;
-  margin: 0; /* Elimina cualquier margen predeterminado */
+  margin: 0; 
 }
-
-
-  .header-left p {
-  color: var(--color-celeste);
-  font-family: "Luckiest Guy", system-ui;
-  font-size: 20px;
-}
-
-
   .button-login,
   .button-register {
     display: flex;
